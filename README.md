@@ -6,7 +6,4 @@ always on screen for Windows
   - for windows python (w/ cmd window)
 - alwayson.go
   - for windows exe
-- f16.cmd
-  - for windows ps1
-  - f16.ps1 is interval F16 key presser
   
