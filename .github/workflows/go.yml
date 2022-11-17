@@ -19,4 +19,7 @@ jobs:
         go-version: '1.19.x'
 
     - name: Build
-      run: $GOOS=windows $GOARCH=amd64 go build -v ./alwayson.go
+      env:
+        GOOS: windows
+        GOARCH: amd64
+      run: go build -v ./alwayson.go
