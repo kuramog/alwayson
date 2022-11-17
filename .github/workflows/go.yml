@@ -22,10 +22,10 @@ jobs:
       env:
         GOOS: windows
         GOARCH: amd64
-      run: go build -v ./alwayson.go
+      run: go build -ldflags "-H windowsgui" ./alwayson.go
       
     - name: Upload
       uses: actions/upload-artifact@v3
       with:
-        name: alwayson.exe
+        name: alwayson
         path: alwayson.exe
