@@ -23,3 +23,9 @@ jobs:
         GOOS: windows
         GOARCH: amd64
       run: go build -v ./alwayson.go
+      
+    - name: Upload
+      uses: actions/upload-artifact@v3
+      with:
+        name: alwayson.exe
+        path: alwayson.exe
